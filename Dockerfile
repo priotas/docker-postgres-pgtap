@@ -8,7 +8,7 @@ RUN apk update \
 RUN cpan TAP::Parser::SourceHandler::pgTAP
 
 # install pgtap
-ENV PGTAP_VERSION v1.1.0
+ENV PGTAP_VERSION v1.0.0
 RUN git clone git://github.com/theory/pgtap.git \
     && cd pgtap && git checkout tags/$PGTAP_VERSION \
     && make \
